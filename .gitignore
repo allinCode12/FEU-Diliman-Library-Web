@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Generated files
+.sass-cache/
+*.css.map
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
