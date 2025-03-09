@@ -32,13 +32,30 @@ ul, ol {
   list-style: none;
 }
 
+.site-header {
+  width: 100%;
+}
+.site-header__inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 74px;
+  max-width: 90%;
+  margin: auto;
+}
 .site-header__logo {
-  max-width: 150px;
+  max-width: 175px;
 }
 .site-header__logo img {
   width: 100%;
   height: auto;
 }
+.site-header__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
 .site-header__nav ul li a {
   font-size: 1rem;
+  font-weight: 600;
 }
