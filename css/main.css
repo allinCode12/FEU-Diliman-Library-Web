@@ -59,3 +59,40 @@ ul, ol {
   font-size: 1rem;
   font-weight: 600;
 }
+
+.site-footer {
+  width: 100%;
+}
+.site-footer__inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 74px;
+  max-width: 90%;
+  margin: auto;
+}
+.site-footer__logo {
+  max-width: 175px;
+}
+.site-footer__logo img {
+  width: 100%;
+  height: auto;
+}
+.site-footer__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.site-footer__nav ul li a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+section {
+  width: 100%;
+}
+section .container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
