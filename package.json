@@ -1,7 +1,7 @@
 {
   "name": "feu-diliman-library",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/allinCode12/FEU-Diliman-Library-Web#readme",
   "description": "",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^3.0.3",
     "gulp": "^5.0.0",
     "gulp-sass": "^6.0.1",

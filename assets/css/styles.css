@@ -87,12 +87,3 @@ ul, ol {
   font-size: 1rem;
   font-weight: 600;
 }
-
-section {
-  width: 100%;
-}
-section .container {
-  max-width: 90%;
-  width: 100%;
-  margin: 0 auto;
-}

@@ -3,7 +3,6 @@ node_modules/
 
 # Generated files
 .sass-cache/
-*.css.map
 
 # Editor files
 .vscode/
@@ -14,3 +13,4 @@ node_modules/
 # OS files
 .DS_Store
 Thumbs.db
+
