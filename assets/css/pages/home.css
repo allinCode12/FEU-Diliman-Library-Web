@@ -4,7 +4,17 @@ main {
 }
 main .home-slider {
   width: 100%;
-  height: 80dvh;
+  height: 80svh;
+}
+@media (min-width: 768px) {
+  main .home-slider {
+    height: 70svh;
+  }
+}
+@media (min-width: 768px) {
+  main .home-slider {
+    height: 75lvh;
+  }
 }
 main .home-slider__item {
   position: relative;
@@ -19,35 +29,36 @@ main .home-slider__item::before {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+main .home-slider__item::after {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/images/tams-book-stacked-cropped.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  max-width: 425px;
+  height: 425px;
+  bottom: -1.5rem;
+  z-index: 1;
+  overflow-x: hidden;
+}
 main .home-slider__item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   object-position: 51%;
 }
 main .home-slider__item-text {
   position: absolute;
-  top: 70%;
-  left: 200px;
+  top: 65%;
+  left: 250px;
   transform: translateY(-50%);
   max-width: 600px;
   text-align: left;
   background-color: rgba(11, 51, 38, 0.8);
-  padding: 20px;
+  padding: 20px 20px 20px 30px;
   border-radius: 4px;
-}
-main .home-slider__item-text .cartoon-tamaraw {
-  position: absolute;
-  top: 0;
-  left: -225px;
-  width: 250px;
-  height: auto;
-}
-main .home-slider__item-text .cartoon-tamaraw img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: contain;
 }
 main .home-slider__item-text h1 {
   font-size: 2.5rem;
