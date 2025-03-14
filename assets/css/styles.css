@@ -1,3 +1,4 @@
+/* SCSS Gradient */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -32,8 +34,23 @@ ul, ol {
   list-style: none;
 }
 
-.site-header {
+section {
   width: 100%;
+}
+section .container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 .site-header__inner-container {
   display: flex;

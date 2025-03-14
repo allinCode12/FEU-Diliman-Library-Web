@@ -1,8 +1,70 @@
-section {
+/* SCSS Gradient */
+main {
+  margin-top: 74px;
+}
+main .home-slider {
+  width: 100%;
+  height: 80dvh;
+}
+main .home-slider__item {
+  position: relative;
   width: 100%;
 }
-section .container {
-  max-width: 90%;
+main .home-slider__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main .home-slider__item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 51%;
+}
+main .home-slider__item-text {
+  position: absolute;
+  top: 70%;
+  left: 200px;
+  transform: translateY(-50%);
+  max-width: 600px;
+  text-align: left;
+  background-color: rgba(11, 51, 38, 0.8);
+  padding: 20px;
+  border-radius: 4px;
+}
+main .home-slider__item-text .cartoon-tamaraw {
+  position: absolute;
+  top: 0;
+  left: -225px;
+  width: 250px;
+  height: auto;
+}
+main .home-slider__item-text .cartoon-tamaraw img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+main .home-slider__item-text h1 {
+  font-size: 2.5rem;
+  color: #e1b746;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+main .home-slider__item-text h2 {
+  font-size: 1.8rem;
+  color: #f1d68c;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  text-transform: capitalize;
+}
+main .home-slider__item-text p {
+  font-size: 1.2rem;
+  color: #fff;
 }
