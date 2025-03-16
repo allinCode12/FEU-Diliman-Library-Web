@@ -4,8 +4,26 @@ function loadComponent(elementId, componentPath) {
         .then(response => response.text())
         .then(data => {
             document.getElementById(elementId).innerHTML = data;
+            // Initialize navigation after header is loaded
+            if (elementId === 'header') {
+                initializeNavigation();
+            }
         })
         .catch(error => console.error('Error loading component:', error));
+}
+
+// Function to toggle mobile navigation
+function toggleMobileNav() {
+    const nav = document.querySelector('.site-header__nav');
+    nav.classList.toggle('site-header__nav--open');
+}
+
+// Function to initialize navigation
+function initializeNavigation() {
+    const menuToggle = document.querySelector('.site-header__menu-toggle');
+    if (menuToggle) {
+        menuToggle.addEventListener('click', toggleMobileNav);
+    }
 }
 
 // Load header and footer when DOM is ready
