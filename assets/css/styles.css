@@ -86,8 +86,7 @@ section .container {
   font-size: 13px;
   line-height: 20px;
 }
-
-.row {
+.site-footer .row {
   width: 85%;
   margin: auto;
   display: flex;
@@ -95,40 +94,32 @@ section .container {
   align-items: flex-start;
   justify-content: space-between;
 }
-
-.col {
+.site-footer .col {
   flex-basis: 25%;
   padding: 10px;
 }
-
-.logo {
+.site-footer .logo {
   width: 80%;
   margin-bottom: 30px;
 }
-
-.col h3 {
+.site-footer .col h3 {
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
 }
-
-.email-id {
+.site-footer .email-id {
   width: fit-content;
   border-bottom: 1px solid #ccc;
   margin: 20px 0;
 }
-
-ul li {
+.site-footer ul li {
   list-style: none;
   margin-bottom: 12px;
 }
-
-ul li a {
+.site-footer ul li a {
   text-decoration: none;
-  color: #fff;
 }
-
-.social-icons .fa-brands {
+.site-footer .social-icons .fa-brands {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -140,14 +131,12 @@ ul li a {
   margin-right: 15px;
   cursor: pointer;
 }
-
-hr {
+.site-footer hr {
   width: 90%;
   border: 0;
   border-bottom: 1px solid #ccc;
   margin: 20px auto;
 }
-
-.copyright {
+.site-footer .copyright {
   text-align: center;
 }
