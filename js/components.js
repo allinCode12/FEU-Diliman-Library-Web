@@ -32,11 +32,11 @@ function initializeNavigation() {
 document.addEventListener('DOMContentLoaded', function() {
     // Load header
     if (document.getElementById('header')) {
-        loadComponent('header', '../components/header.html');
+        loadComponent('header', '/components/header.html'); // Updated path
     }
     
     // Load footer
     if (document.getElementById('footer')) {
-        loadComponent('footer', '../components/footer.html');
+        loadComponent('footer', '/components/footer.html'); // Updated path
     }
 });
