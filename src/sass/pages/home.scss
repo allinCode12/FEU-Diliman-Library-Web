@@ -34,7 +34,7 @@ main {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.1);
+                // background-color: rgba(0, 0, 0, 0.1);
             }
 
             &::after {
@@ -234,10 +234,8 @@ main {
                     border-right: 2px solid rgba(255, 251, 0, 0.7);
                     border-bottom: 2px solid rgba(44, 117, 102, 0.7);
                     background-color:  rgba(44, 117, 102, 0.3);
-
                 }
     
-                /* Hover Effect */
                 &:hover {
                     .value-title {
                         opacity: 1;
@@ -256,7 +254,11 @@ main {
                         height: 100%;
                         background-color: rgba(44, 117, 102, 0.7);
                         z-index: 1;
-                        transition: all 0.3s ease;
+                        transition: all 0.9s ease;
+                    }
+
+                    &::after {
+                        display: none;
                     }
                 }
     
@@ -284,7 +286,7 @@ main {
                     line-height: 1.5;
                     max-width: 80%;
                     z-index: 2;
-                    transition: all 0.3s ease;
+                    transition: all 0.9s ease;
                     opacity: 0;
                     transform: translateY(20px);
                 }

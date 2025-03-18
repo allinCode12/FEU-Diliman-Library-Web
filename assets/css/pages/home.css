@@ -34,7 +34,6 @@ main .home-slider__item::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 main .home-slider__item::after {
   content: "";
@@ -205,7 +204,6 @@ main .values-section .container .value-item {
   border-radius: 4px;
   overflow: hidden;
   height: 300px;
-  /* Hover Effect */
 }
 main .values-section .container .value-item img {
   width: 100%;
@@ -243,7 +241,10 @@ main .values-section .container .value-item:hover::before {
   height: 100%;
   background-color: rgba(44, 117, 102, 0.7);
   z-index: 1;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
+}
+main .values-section .container .value-item:hover::after {
+  display: none;
 }
 main .values-section .container .value-item .value-title {
   position: absolute;
@@ -268,7 +269,7 @@ main .values-section .container .value-item .value-copy {
   line-height: 1.5;
   max-width: 80%;
   z-index: 2;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
   opacity: 0;
   transform: translateY(20px);
 }
