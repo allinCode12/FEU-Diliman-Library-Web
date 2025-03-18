@@ -197,6 +197,9 @@ section .container {
   margin-right: 15px;
   cursor: pointer;
 }
+.site-footer .social-icons .fa-brands:hover {
+  transform: translateY(-10px);
+}
 .site-footer hr {
   width: 90%;
   border: 0;
@@ -209,29 +212,37 @@ section .container {
 .site-footer .underline {
   width: 100%;
   height: 5px;
-  background: #767676;
+  background: #fff;
   border-radius: 3px;
   position: absolute;
   top: 25px;
   left: 0;
-  overflow: hidden;
+  animation: flicker 5s infinite alternate;
 }
-.site-footer .underline span {
-  width: 20px;
-  height: 100%;
-  background: #fff;
-  border-radius: 3px;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  animation: moving 3s linear infinite;
-}
-@keyframes moving {
+@keyframes flicker {
   0% {
-    left: -20px;
+    opacity: 1;
+    text-shadow: 0 0 5px;
+  }
+  20% {
+    opacity: 0.8;
+    text-shadow: 0 0 5px;
+  }
+  40% {
+    opacity: 1;
+    text-shadow: 0 0 5px;
+  }
+  60% {
+    opacity: 0.6;
+    text-shadow: 0 0 3px;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: 0 0 5px;
   }
   100% {
-    left: 100%;
+    opacity: 0.9;
+    text-shadow: 0 0 4px;
   }
 }
 @media (max-width: 700px) {
