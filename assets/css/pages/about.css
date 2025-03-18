@@ -7,6 +7,7 @@ main section:not(:first-of-type) {
 }
 main .banner {
   display: flex;
+  padding-top: 0;
 }
 main .banner__item {
   flex: 1;
