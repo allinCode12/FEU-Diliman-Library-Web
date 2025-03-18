@@ -57,7 +57,7 @@ section .container {
   justify-content: space-between;
   align-items: center;
   min-height: 74px;
-  max-width: 90%;
+  max-width: 85%;
   margin: auto;
 }
 .site-header__logo {
@@ -70,11 +70,18 @@ section .container {
 .site-header__nav ul {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.75rem;
 }
 .site-header__nav ul li a {
   font-size: 1rem;
   font-weight: 600;
+  padding: 12px 8.4px;
+  border-bottom: 0 solid #0f5a39;
+  transition: border-bottom 0.12s ease-in-out;
+}
+.site-header__nav ul li a:hover {
+  border-bottom: 3px solid #0f5a39;
+  color: #0f5a39;
 }
 .site-header__nav--open {
   display: block;
@@ -84,6 +91,10 @@ section .container {
   background: none;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.site-header__menu-toggle.active {
+  transform: scaleX(-1);
 }
 .site-header__menu-toggle .site-header__menu-icon {
   width: 25px;
@@ -115,16 +126,16 @@ section .container {
   .site-header__nav {
     display: block;
     position: absolute;
-    top: -500%;
-    left: 0;
+    top: 100%;
+    right: -200%;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-    transition: top 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
     z-index: -1;
   }
   .site-header__nav--open {
-    top: 100%;
+    right: 0;
   }
   .site-header__nav ul {
     flex-direction: column;
@@ -138,6 +149,12 @@ section .container {
     padding: 1rem;
     font-size: 1.25rem;
     text-align: left;
+    border-bottom: 0 solid #0f5a39;
+    transition: border-bottom 0.12s ease-in-out;
+  }
+  .site-header__nav ul li a:hover {
+    border-bottom: 3px solid #0f5a39;
+    color: #0f5a39;
   }
 }
 .site-footer {

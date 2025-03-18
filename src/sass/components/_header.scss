@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
         min-height: 74px;
-        max-width: 90%;
+        max-width: 85%;
         margin: auto;
     }
     
@@ -27,11 +27,18 @@
         ul {
             display: flex;
             align-items: center;
-            gap: 1.25rem;
+            gap: 1.75rem;
             li {
                 a {
                     font-size: 1rem;
                     font-weight: 600;
+                    padding: 12px 8.4px;
+                    border-bottom: 0 solid #0f5a39;
+                    transition: border-bottom 0.12s ease-in-out;
+                        &:hover {
+                            border-bottom: 3px solid #0f5a39;
+                            color: #0f5a39;
+                        }
                 }
             }
         }
@@ -45,6 +52,11 @@
         background: none;
         border: none;
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &.active {
+            transform: scaleX(-1);
+        }
         .site-header__menu-icon {
             width: 25px;
             height: 2px;
@@ -80,15 +92,15 @@
         &__nav {
             display: block;
             position: absolute;
-            top: -500%;
-            left: 0;
+            top: 100%;
+            right: -200%;
             width: 100%;
             background-color: #fff;
             box-shadow: 0 1px 8px rgba(0,0,0,.1);
-            transition: top 0.3s ease-in-out;
+            transition: right 0.3s ease-in-out;
             z-index: -1;
             &--open {
-                top: 100%;
+                right: 0;
             }
             
             ul {
@@ -101,6 +113,13 @@
                         padding: 1rem;
                         font-size: 1.25rem;
                         text-align: left;
+
+                        border-bottom: 0 solid #0f5a39;
+                        transition: border-bottom 0.12s ease-in-out;
+                        &:hover {
+                            border-bottom: 3px solid #0f5a39;
+                            color: #0f5a39;
+                        }
                     }
                 }
             }
