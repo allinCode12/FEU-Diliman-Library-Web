@@ -1,0 +1,53 @@
+/* SCSS Gradient */
+main {
+  margin-top: 74px;
+}
+main section:not(:first-of-type) {
+  padding-top: 4.375rem;
+}
+main .banner {
+  display: flex;
+}
+main .banner__item {
+  flex: 1;
+  background: #003366;
+  display: flex;
+  align-items: center;
+}
+main .banner__text {
+  color: #f4f4f4;
+  padding-left: 30px;
+}
+main .banner img {
+  width: 100%;
+  object-fit: cover;
+}
+main .values-section .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+}
+main .values-section .container .value {
+  border: 1px solid #e1b746;
+  padding: 2rem;
+  text-align: center;
+}
+main .values-section .container .value h2 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+main .values-section .container .value p {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+@media (max-width: 768px) {
+  main .values-section .container .value {
+    padding: 1rem;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  main .values-section .container {
+    display: block;
+  }
+}
