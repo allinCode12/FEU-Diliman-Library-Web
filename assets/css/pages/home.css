@@ -1,6 +1,8 @@
 /* SCSS Gradient */
 main {
-  margin-top: 74px;
+  margin: 0;
+  padding-top: 74px;
+  padding-bottom: 74px;
 }
 main .home-slider {
   width: 100%;
@@ -8,6 +10,8 @@ main .home-slider {
 }
 main .home-slider-section {
   overflow-x: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 @media (min-width: 768px) {
   main .home-slider {
@@ -155,17 +159,188 @@ main .home-slider__item-text p {
     font-size: 1.2rem;
   }
 }
-main .discover-section {
-  padding-top: 4.375rem;
-}
 main .discover-section h2 {
   font-family: "Anton", serif;
-  font-size: 5rem;
+  font-size: 3.625rem;
   font-weight: 300;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
   text-wrap: balance;
-  max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
+}
+@media (min-width: 1024px) {
+  main .discover-section h2 {
+    font-size: 5rem;
+  }
+}
+main .discover-section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  max-width: 720px;
+  text-align: center;
+  text-wrap: balance;
+  margin: 0 auto 1rem;
+}
+@media (min-width: 1024px) {
+  main .discover-section p {
+    font-size: 1.25rem;
+  }
+}
+main .values-section .container {
+  max-width: 90%;
+}
+@media (min-width: 1200px) {
+  main .values-section .container {
+    max-width: 1180px;
+  }
+}
+main .values-section .container .values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main .values-section .container .value-item {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 300px;
+  /* Hover Effect */
+}
+main .values-section .container .value-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .values-section .container .value-item::after {
+  content: "A";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  transition: all 0.3s ease;
+  border-right: 2px solid rgba(255, 251, 0, 0.7);
+  border-bottom: 2px solid rgba(44, 117, 102, 0.7);
+  background-color: rgba(44, 117, 102, 0.3);
+}
+main .values-section .container .value-item:hover .value-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+main .values-section .container .value-item:hover .value-copy {
+  opacity: 1;
+  transform: translateY(0);
+}
+main .values-section .container .value-item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 117, 102, 0.7);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+main .values-section .container .value-item .value-title {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+main .values-section .container .value-item .value-copy {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 80%;
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+main .values-section .container .top-row {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+main .values-section .container .top-row .value-item {
+  flex: 1;
+  max-height: 200px;
+}
+@media (min-width: 1024px) {
+  main .values-section .container .top-row .value-item {
+    max-height: 300px;
+  }
+}
+main .values-section .container .middle-row {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+main .values-section .container .middle-row .value-item {
+  flex: 1;
+}
+main .values-section .container .middle-row .school-info {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .values-section .container .middle-row .school-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #000;
+}
+main .values-section .container .middle-row .school-info p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+main .values-section .container .learn-more-btn {
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: 2px solid #2C7566;
+  color: #2C7566;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+main .values-section .container .learn-more-btn:hover {
+  background-color: #2C7566;
+  color: white;
+}
+main .values-section .container .bottom-row {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+main .values-section .container .bottom-row .value-item {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  main .values-section .container .top-row,
+  main .values-section .container .middle-row,
+  main .values-section .container .bottom-row {
+    flex-direction: column;
+  }
+  main .values-section .container .value-item {
+    height: 200px;
+  }
 }

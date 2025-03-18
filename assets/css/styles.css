@@ -36,6 +36,8 @@ ul, ol {
 
 section {
   width: 100%;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
 }
 section .container {
   max-width: 90%;
@@ -49,7 +51,7 @@ section .container {
   top: 0;
   left: 0;
   background-color: #fff;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   z-index: 9999;
 }
 .site-header__inner-container {
