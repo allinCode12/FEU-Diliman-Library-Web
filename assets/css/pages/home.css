@@ -38,7 +38,7 @@ main .home-slider__item::before {
 main .home-slider__item::after {
   content: "";
   position: absolute;
-  background-image: url("/assets/images/tams-book-stacked-cropped.svg");
+  background-image: url("https://allincode12.github.io/FEU-Diliman-Library-Web/assets/images/tams-book-stacked-cropped.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
