@@ -87,7 +87,8 @@ section .container {
   color: #0f5a39;
 }
 .site-header__nav--open {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 .site-header__menu-toggle {
   display: none;
@@ -127,15 +128,14 @@ section .container {
     display: block;
   }
   .site-header__nav {
-    display: block;
     position: absolute;
     top: 100%;
-    right: -200%;
+    right: -120%;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease-in-out;
-    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
   }
   .site-header__nav--open {
     right: 0;
