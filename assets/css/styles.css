@@ -30,7 +30,8 @@ a {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -187,6 +188,9 @@ section .container {
 .site-footer .logo {
   width: 80%;
   margin-bottom: 30px;
+  background: white;
+  border: 2px solid #FFC107;
+  padding: 8px 12px;
 }
 .site-footer .col h3 {
   width: fit-content;

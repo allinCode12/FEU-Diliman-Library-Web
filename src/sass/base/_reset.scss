@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  overflow-x:hidden;
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -29,18 +29,20 @@ a {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 section {
   width: 100%;
-  padding-top: 4.375rem; 
+  padding-top: 4.375rem;
   padding-bottom: 4.375rem;
   overflow-x: hidden;
+
   .container {
-      max-width: 90%;
-      width: 100%;
-      margin: 0 auto;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
