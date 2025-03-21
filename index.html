@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Critical CSS first -->
+    <!-- Title -->
+    <title>FEU Diliman Library</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon-16x16.png" type="image/x-icon" />
+    
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-  
+    <link rel="stylesheet" href="./assets/css/pages/testimonials-slider.css" />
     
     <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,14 +22,13 @@
     <link rel="stylesheet" href="./assets/css/pages/home.css" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" media="print" onload="this.media='all'" />
-    
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet" media="print" onload="this.media='all'" />
-        
-    <script src="https://kit.fontawesome.com/78f891149e.js" crossorigin="anonymous" async></script>
-    <link rel="icon" href="./assets/images/favicon-16x16.png" type="image/x-icon">
     
-    <title>FEU Diliman Library</title>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/78f891149e.js" crossorigin="anonymous" async></script>
+
+    <script src="./js/testimonials-slider.js" defer></script>
 </head>
 
 <body>
@@ -168,7 +173,7 @@
                             <p>
                                 The FEU Diliman Library is a hub for academic excellence, offering a supportive environment where students and faculty engage in research, learning, and collaboration.
                             </p>
-                            <a href="./about-us.html" class="learn-more-btn">Learn More</a>
+                            <a href="./about.html" class="learn-more-btn">Learn More</a>
                         </div>
                         <div class="value-item">
                             <img src="assets/images/lib-support.jpg" alt="Student Support" />
@@ -187,6 +192,48 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="testimonial-content">
+                  <p></p>
+                  <div class="testimonial-author"></div>
+                  <div class="testimonial-role"></div>
+                  <div class="slider-nav"></div>
+                </div>
+                <div class="testimonial-slider">
+                  <div class="slide"
+                    data-testimonial="It's not only the ability to teach, but the ability to nurture the skills in the person that leads them to go beyond what they realized they could be."
+                    data-author="Joanne Manrique" data-role="Parent">
+                    <img
+                      src="./assets/images/jeremie-canido-testimonee.jpg"
+                      alt="Testimonial 1">
+                  </div>
+                  <div class="slide"
+                    data-testimonial="The teachers here are exceptional. They really understand how to bring out the best in each student."
+                    data-author="Michael Smith" data-role="Student">
+                    <img
+                      src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Testimonial 2">
+                  </div>
+                  <div class="slide"
+                    data-testimonial="An amazing learning environment that fosters creativity and critical thinking."
+                    data-author="Sarah Johnson" data-role="Teacher">
+                    <img
+                      src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Testimonial 3">
+                  </div>
+                  <div class="slide"
+                    data-testimonial="It's not only the ability to teach, but the ability to nurture the skills in the person that leads them to go beyond what they realized they could be."
+                    data-author="Joanne Manrique" data-role="Parent">
+                    <img
+                      src="./assets/images/jeremie-canido-testimonee.jpg"
+                      alt="Testimonial 1">
+                  </div>
+                </div>
+            </div>
+          </section>
+            
         </section>
     </main>
     <!-- Footer -->

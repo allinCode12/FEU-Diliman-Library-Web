@@ -12,6 +12,7 @@ main .home-slider-section {
   overflow-x: hidden;
   padding-top: 0;
   padding-bottom: 0;
+  margin-bottom: 4.375rem;
 }
 @media (min-width: 768px) {
   main .home-slider {

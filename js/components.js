@@ -35,3 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     initializeNavigation();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const postBoxes = document.querySelectorAll(".post-box");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const index = Array.from(postBoxes).indexOf(entry.target);
+                entry.target.style.animationDelay = `${index * 0.2}s`;
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.1 });
+
+    postBoxes.forEach((box) => observer.observe(box));
+});
