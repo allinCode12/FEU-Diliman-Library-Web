@@ -1,1 +1,65 @@
 @use "../abstracts/variables";
+
+.about {
+    &-container {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .left, .right {
+        width: 50%;
+    }
+    
+    .left {
+        background-color: #0f5a39;
+        color: white;
+        padding-left: 40px;
+    }
+    
+    .right img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+.values {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+
+        .value {
+            border: 1px solid green;
+            padding: 1rem;
+
+            h3 {
+                color: #0f5a39;
+            }
+        }
+    }
+}
+
+.timeline {
+    &-container {
+        display: flex;
+    }
+
+    .time-left, .time-right {
+        width: 50%;
+    }
+
+    .time-right {
+        overflow-y: scroll;
+    }
+}

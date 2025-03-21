@@ -1,1 +1,50 @@
 /* SCSS Gradient */
+.about-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.about .left, .about .right {
+  width: 50%;
+}
+.about .left {
+  background-color: #0f5a39;
+  color: white;
+  padding-left: 40px;
+}
+.about .right img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 30px;
+  text-align: center;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+}
+.values-grid .value {
+  border: 1px solid green;
+  padding: 1rem;
+}
+.values-grid .value h3 {
+  color: #0f5a39;
+}
+
+.timeline-container {
+  display: flex;
+}
+.timeline .time-left, .timeline .time-right {
+  width: 50%;
+}
+.timeline .time-right {
+  overflow-y: scroll;
+}
