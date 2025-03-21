@@ -39,6 +39,7 @@ section {
   width: 100%;
   padding-bottom: 4.375rem;
   overflow-x: hidden;
+  scroll-margin-top: 100px !important;
 }
 section .container {
   max-width: 90%;
