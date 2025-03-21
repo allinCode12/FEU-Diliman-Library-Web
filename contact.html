@@ -38,7 +38,60 @@
         </div>
     </header>
    <!-- Main Content -->
+    <main>
+        <section class="contact">
+            <div class="contact-container">
+                <div class="left">
+                    <div class="form-wrapper">
+                        <div class="contact-heading">
+                            <h1 style="color: #185300;">Let’s Learn <span style="color: #ffb81c;">Together</span></h1>
+                            <p class="text">Or reach us via: <a href="mailto:">library@feudiliman.edu.ph</a></p>
+                        </div>
+                        <form action="contact.html" method="post" class="contact-form">
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                                <label>First Name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
 
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                                <label>Last Name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+
+                            <div class="input-wrap w-100">
+                                <input class="contact-input" autocomplete="off" name="Email" type="email" required>
+                                <label>Email</label>
+                                <i class="icon fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div class="input-wrap textarea w-100">
+                                <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
+                                <label>Message</label>
+                                <i class="icon fa-solid fa-inbox"></i>
+                            </div>
+
+                            <div class="contact-buttons w-100">
+                                <button class="btn upload">
+                                    <span>
+                                        <i class="fa-solid fa-paperclip"></i> Add attachment
+                                    </span>
+                                    <input type="file" name="attachement">
+                                </button>
+                                <input type="submit" value="Send message" class="btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="image-wrapper">
+                        <img src="./assets/images/contactpage-banner.jpg" alt="" class="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="site-footer">
         <div class="row">
             <div class="col">
