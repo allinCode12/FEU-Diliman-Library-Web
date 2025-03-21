@@ -21,7 +21,7 @@ $(document).ready(function() {
       appendDots: $('.slider-nav'),
       centerMode: false,
       autoplay: true,
-      speed: 1200,
+      speed: 2500,
       responsive: [
         {
           breakpoint: 768,

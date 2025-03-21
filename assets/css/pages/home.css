@@ -2,7 +2,6 @@
 main {
   margin: 0;
   padding-top: 74px;
-  padding-bottom: 74px;
 }
 main .home-slider {
   width: 100%;
@@ -344,5 +343,56 @@ main .values-section .container .bottom-row .value-item {
   }
   main .values-section .container .value-item {
     height: 200px;
+  }
+}
+
+.icon-columns-section .icon-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.icon-columns-section .icon-columns > div {
+  flex: 1 1 calc(25% - 20px);
+  text-align: center;
+  padding: 20px;
+}
+.icon-columns-section .icon-columns i {
+  font-size: 3em;
+  margin-bottom: 1rem;
+}
+.icon-columns-section .icon-columns h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.icon-columns-section .icon-columns p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.icon-columns-section .icon-columns .btn {
+  font-size: 1rem;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.icon-columns-section .icon-columns .btn-primary {
+  border: 2px solid #2C7566;
+  color: #2C7566;
+  background: transparent;
+}
+.icon-columns-section .icon-columns .btn-primary:hover {
+  background-color: #2C7566;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .icon-columns-section .icon-columns > div {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .icon-columns-section .icon-columns > div {
+    flex: 1 1 100%;
   }
 }
