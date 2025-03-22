@@ -1,50 +1,158 @@
 /* SCSS Gradient */
-.about-container {
-  display: flex;
-  align-items: center;
-  flex: 1;
+main {
+  margin: 0;
+  padding-top: 74px;
 }
-.about .left, .about .right {
+main .about {
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  main .about {
+    height: 70svh;
+  }
+}
+@media (min-width: 1024px) {
+  main .about {
+    height: 80lvh;
+  }
+}
+main .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+}
+main .about-left, main .about-right {
+  height: 100%;
   width: 50%;
 }
-.about .left {
+@media (max-width: 768px) {
+  main .about-left, main .about-right {
+    width: 100%;
+  }
+}
+main .about-left {
   background-color: #0f5a39;
   color: white;
-  padding-left: 40px;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3rem;
 }
-.about .right img {
-  max-height: 100%;
-  max-width: 100%;
+main .about-left h1 {
+  margin-bottom: 16px;
+  font-size: 2.25rem;
+}
+@media (min-width: 768px) {
+  main .about-left h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .about-left h1 {
+    font-size: 3.5rem;
+  }
+}
+main .about-right img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
-
-.values-container {
+main .values-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 0 30px;
   text-align: center;
+  flex: 1 1 auto;
 }
-.values-grid {
+main .values h2 {
+  font-size: 2.5rem;
+}
+@media (max-width: 1024px) {
+  main .values h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  main .values h2 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 480px) {
+  main .values h2 {
+    font-size: 1.5rem;
+  }
+}
+main .values-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 1rem;
+  gap: 30px;
 }
-.values-grid .value {
+@media (max-width: 768px) {
+  main .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 903px) {
+  main .values-grid {
+    gap: 25px;
+  }
+}
+main .values-grid .value {
+  overflow-wrap: break-word;
   border: 1px solid green;
-  padding: 1rem;
+  padding: 1.5rem;
+  min-width: 0;
 }
-.values-grid .value h3 {
+main .values-grid .value h3 {
+  font-size: 2rem;
   color: #0f5a39;
 }
-
-.timeline-container {
+@media (max-width: 1024px) {
+  main .values-grid .value h3 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  main .values-grid .value h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  main .values-grid .value h3 {
+    font-size: 1.25rem;
+  }
+}
+main .values-grid .value p {
+  font-size: 1.5rem;
+}
+@media (max-width: 1024px) {
+  main .values-grid .value p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  main .values-grid .value p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  main .values-grid .value p {
+    font-size: 0.875rem;
+  }
+}
+main .timeline-container {
   display: flex;
 }
-.timeline .time-left, .timeline .time-right {
+main .timeline .time-left,
+main .timeline .time-right {
   width: 50%;
 }
-.timeline .time-right {
+main .timeline .time-right {
   overflow-y: scroll;
 }
