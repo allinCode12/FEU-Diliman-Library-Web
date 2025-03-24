@@ -49,9 +49,14 @@ main .about-left {
   flex-direction: column;
   padding-left: 3rem;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   main .about-left {
-    padding-left: 2rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1017px) {
+  main .about-left {
+    font-size: 2rem;
   }
 }
 main .about-left h1 {
@@ -207,6 +212,9 @@ main .timeline-section .parent .kanan {
   width: 50%;
   overflow-y: auto;
   height: 100vh;
+}
+main .timeline-section .parent .kanan::-webkit-scrollbar {
+  display: none;
 }
 main .timeline-section .parent .timeline {
   position: relative;

@@ -51,8 +51,12 @@ main {
             flex-direction: column;
             padding-left: 3rem;
 
-            @media (max-width: 768px) {
-                padding-left: 2rem;
+            @media (min-width: 768px) {
+                font-size: 1rem;
+            }
+
+            @media (min-width: 1017px) {
+                font-size: 2rem;
             }
 
             h1 {
@@ -219,6 +223,11 @@ main {
                 width: 50%;
                 overflow-y: auto;
                 height: 100vh;
+                
+            }
+
+            .kanan::-webkit-scrollbar {
+                display: none;
             }
 
             .timeline {
